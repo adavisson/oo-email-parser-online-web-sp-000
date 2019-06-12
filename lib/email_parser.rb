@@ -9,7 +9,7 @@ class EmailParser
   @@email_list = []
   
   def initialize(email_string)
-    
+    @@email_list << email_string
   end
   
   def parse
