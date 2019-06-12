@@ -14,7 +14,8 @@ class EmailParser
   
   def parse
     flat_array = @email_list.collect do |string|
-      #string.split
+      string.split(", ")
     end
+    flat_array.flatten
   end
 end
