@@ -6,13 +6,14 @@
 
 class EmailParser
   
-  @@email_list = []
+  attr_accessor :email_list
   
   def initialize(email_string)
     @@email_list << email_string
   end
   
   def parse
-    
+    flat_array = @@email_list.collect do |string|
+      string.split
   end
 end
