@@ -13,7 +13,6 @@ class EmailParser
   end
   
   def parse
-    
-    flat_array.flatten
+    array = @email_list.split(", ")
   end
 end
