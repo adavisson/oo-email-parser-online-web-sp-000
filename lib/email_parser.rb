@@ -9,11 +9,11 @@ class EmailParser
   attr_accessor :email_list
   
   def initialize(email_string)
-    @@email_list << email_string
+    @email_list << email_string
   end
   
   def parse
-    flat_array = @@email_list.collect do |string|
+    flat_array = @email_list.collect do |string|
       string.split
   end
 end
