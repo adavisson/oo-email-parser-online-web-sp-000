@@ -9,7 +9,7 @@ class EmailParser
   attr_accessor :email_list
   
   def initialize(email_string)
-    @email_list << email_string
+    @email_list = email_string
   end
   
   def parse
