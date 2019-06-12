@@ -14,7 +14,7 @@ class EmailParser
   
   def parse
     array = []
-    @email_list.split(/[\s,]+/).collect do |string|
+    @email_list.split(/[\s,]+/).each do |string|
       if !array.include?(string)
         array.push(string)
       end
